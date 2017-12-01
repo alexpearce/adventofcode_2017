@@ -26,6 +26,17 @@
 /// assert_eq!(sequence_sum("123123", 3), 12);
 /// assert_eq!(sequence_sum("12131415", 4), 4);
 /// ```
+///
+/// # Alternative implementation
+///
+/// Using a map-reduce method.
+///
+/// ```rust,notest
+/// sequence.chars()
+///         .zip(sequence.chars().cycle().skip(offset))
+///         .map(|(a, b)| (a.to_digit(10).unwrap(), b.to_digit(10).unwrap()))
+///         .fold(0, |acc, (a, b)| if a == b { acc + a } else { acc })
+/// ```
 pub fn sequence_sum(sequence: &str, offset: usize) -> u32 {
     let mut sum : u32 = 0;
     // Loop over the sequence in pairs of characters, and increment the sum if the two digits
