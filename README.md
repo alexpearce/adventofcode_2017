@@ -1,4 +1,4 @@
-# Advent of Code 2017 solutions
+# Advent of Code 2017 solutions [![Build Status](https://travis-ci.org/alexpearce/adventofcode_2017.svg?branch=master)](https://travis-ci.org/alexpearce/adventofcode_2017)
 
 Solutions to the 2017 edition of [Advent of Code][advent], as an exercise in 
 learning [Rust][rust].
