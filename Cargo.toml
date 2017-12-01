@@ -6,12 +6,5 @@ authors = ["Alex Pearce <alex@alexpearce.me>"]
 [dependencies]
 
 [lib]
-name = "day1"
-path = "src/day1/lib.rs"
-
-[[bin]]
-name = "day1"
-path = "src/day1/main.rs"
-# Can't generate docs for two identically named objects, like the bin and lib
-# we have here
-doc = false
+name = "aoc17"
+path = "src/lib.rs"

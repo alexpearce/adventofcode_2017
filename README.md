@@ -19,7 +19,7 @@ Puzzle #2: …
 Or you can run a particular day directly.
 
 ```shell
-$ cargo run day1
+$ cargo run --bin day1
    Compiling adventofcode_2017 v0.1.0 (file:///home/rustacean/Projects/adventofcode/adventofcode_2017)
 Finished dev [unoptimized + debuginfo] target(s) in 0.30 secs
  Running `target/debug/day1 day1`

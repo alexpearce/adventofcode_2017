@@ -11,7 +11,7 @@
 /// # Examples
 ///
 /// ```
-/// use day1::sequence_sum;
+/// use aoc17::day1::sequence_sum;
 ///
 /// // When the match with the following digit should be considered
 /// assert_eq!(sequence_sum("1122", 1), 3);
@@ -31,12 +31,13 @@
 ///
 /// Using a map-reduce method.
 ///
-/// ```rust,notest
+/// ```rust,ignore
 /// sequence.chars()
 ///         .zip(sequence.chars().cycle().skip(offset))
 ///         .map(|(a, b)| (a.to_digit(10).unwrap(), b.to_digit(10).unwrap()))
 ///         .fold(0, |acc, (a, b)| if a == b { acc + a } else { acc })
 /// ```
+///
 pub fn sequence_sum(sequence: &str, offset: usize) -> u32 {
     let mut sum : u32 = 0;
     // Loop over the sequence in pairs of characters, and increment the sum if the two digits
